@@ -9,7 +9,6 @@
 
 body{
     font-family: 'Space Mono', monospace;
-    font-size: 24px;
     display: grid;
     min-height: 100vh;
     place-content: center;
@@ -29,19 +28,92 @@ main{
     display: flex;
 }
 
+.first{
+    width: 50%;
+    margin: 20px;
+}
+
+.fill-in{
+    position: relative;
+    margin: 20px 0;
+}
+
+h1,h2{
+    margin-bottom: 5px;
+    color: hsl(186, 14%, 43%);
+}
+
+.fill-in i{
+    position: absolute;
+    padding: 10px;
+}
+
+.fill-in input{
+    text-align: end;
+    padding: 0 10px;
+    background: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.tip button,.tip input{
+    width: 30%;
+    margin: 10px 0;
+    padding: 7px;
+    text-align: center;
+}
+
 .second{
     background: hsl(183, 100%, 15%);
     padding: 20px;
     border-radius: 15px;
+    width: 50%;
 }
 
 .full-content{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.half-width1{
+    font-size: 13px;
+}
+
+.half-width1 h3{
+    color: hsl(189, 41%, 97%);
+}
+
+.half-width1 p {
+    color: hsl(184, 14%, 56%);
+}
+
+.half-width2{
+    font-size: 30px;
+    margin-left: 15px;
+    color: hsl(172, 67%, 45%);
+}
+
+.btn button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-top: 75px;
+    margin-bottom: 0;
+    background: #0d686d;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+}
 
 .attribution {
     font-size: 16px;
