@@ -7,7 +7,7 @@
     font: inherit;
 }
 
-body{
+body {
     font-family: 'Space Mono', monospace;
     display: grid;
     min-height: 100vh;
@@ -15,40 +15,40 @@ body{
     background: hsl(185, 41%, 84%);
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     margin: 50px;
 }
 
-main{
+main {
     background: hsl(0, 0%, 100%);
     padding: 15px;
-    border-radius: 15px;
-    display: flex;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
 }
 
-.first{
-    width: 50%;
+.first {
     margin: 20px;
 }
 
-.fill-in{
+.fill-in {
     position: relative;
     margin: 20px 0;
 }
 
-h1,h2{
+h1,
+h2 {
     margin-bottom: 5px;
     color: hsl(186, 14%, 43%);
 }
 
-.fill-in i{
+.fill-in i {
     position: absolute;
     padding: 10px;
 }
 
-.fill-in input{
+.fill-in input {
     text-align: end;
     padding: 0 10px;
     background: hsl(189, 41%, 97%);
@@ -57,37 +57,50 @@ h1,h2{
     font-size: 24px;
 }
 
-.tip button,.tip input{
-    width: 30%;
+.tip button,
+.tip input {
+    width: 28%;
     margin: 10px 0;
     padding: 7px;
     text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
 }
 
-.second{
+.tip button {
+    background: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+}
+
+.tip input {
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip input::placeholder {
+    color: hsla(183, 100%, 15%, 0.7);
+}
+
+.second {
     background: hsl(183, 100%, 15%);
     padding: 20px;
     border-radius: 15px;
-    width: 50%;
 }
 
-.full-content{
+.full-content {
     display: flex;
     flex-direction: column;
 }
 
-.content-wrapper{
+.content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 15px 0;
 }
 
-.half-width1{
-    font-size: 13px;
-}
-
-.half-width1 h3{
+.half-width1 h3 {
     color: hsl(189, 41%, 97%);
 }
 
@@ -95,13 +108,13 @@ h1,h2{
     color: hsl(184, 14%, 56%);
 }
 
-.half-width2{
+.half-width2 {
     font-size: 30px;
     margin-left: 15px;
     color: hsl(172, 67%, 45%);
 }
 
-.btn button{
+.btn button {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -123,4 +136,19 @@ h1,h2{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        border-radius: 15px;
+        display: flex;
+    }
+
+    .first{
+        width: 50%;
+    }
+
+    .second{
+        width: 50%;
+    }
 }
