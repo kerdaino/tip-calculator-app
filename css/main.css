@@ -22,14 +22,16 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: hsl(0, 0%, 100%);
     padding: 15px;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-radius: 35px;
 }
 
 .first {
-    margin: 20px;
+    margin: 0 10px;
 }
 
 .fill-in {
@@ -53,6 +55,7 @@ h2 {
     padding: 0 10px;
     background: hsl(189, 41%, 97%);
     border: none;
+    color: hsla(183, 100%, 15%, 0.9);
     border-radius: 5px;
     font-size: 24px;
 }
@@ -86,6 +89,7 @@ h2 {
     background: hsl(183, 100%, 15%);
     padding: 20px;
     border-radius: 15px;
+    width: 95%;
 }
 
 .full-content {
@@ -119,13 +123,23 @@ h2 {
     display: flex;
     justify-content: center;
     border-radius: 5px;
-    padding: 5px 0;
-    margin-top: 75px;
+    padding: 10px;
+    margin-top: 15px;
     margin-bottom: 0;
     background: #0d686d;
     border: none;
     color: hsl(183, 100%, 15%);
     text-transform: uppercase;
+}
+
+.fill-in input:hover,.fill-in input:active,.fill-in input:focus{
+    border: solid 1px hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.tip button:hover,.tip button:focus,.btn button:hover,.btn button:focus{
+    cursor: pointer;
+    background: hsla(172, 67%, 45%,0.9);
 }
 
 .attribution {
@@ -138,17 +152,23 @@ h2 {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     main {
         border-radius: 15px;
         display: flex;
+        flex-direction: row;
+        padding: 0px 15px;
     }
 
-    .first{
+    .first {
         width: 50%;
     }
 
-    .second{
+    .second {
         width: 50%;
+    }
+
+    .btn button {
+        margin-top: 75px;
     }
 }
