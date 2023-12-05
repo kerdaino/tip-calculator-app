@@ -8,75 +8,69 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="css/main.css">
-
   <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 </head>
 
 <body>
+
   <header>
     <img src="images/logo.svg" alt="logo">
   </header>
   <main>
-    <div class="first">
-      <section class="fill-in">
-        <h1>Bill</h1>
-        <i><img src="images/icon-dollar.svg" alt="icon-dollar"></i>
-        <input type="text" placeholder="0">
+    <form id="Tip">
+      <section class="bill-content">
+        <label>Bill</label>
+        <div class="input-wrapper">
+          <img src="images/icon-dollar.svg" alt="icon-dollar">
+          <input type="number" placeholder="0" name="number" id="bill">
+        </div>
+      </section>
+      <section class="tip-content">
+        <label for="Tip">Select Tip %</label>
+        <div class="tip buttons">
+          <button type="button">5%</button>
+          <button type="button">10%
+          </button>
+          <button type="button">15%</button>
+          <button type="button">25%</button>
+          <button type="button">50%</button>
+          <input type="number" placeholder="Custom" name="number" id="tipinput">
+        </div>
       </section>
       <section>
-        <div class="tip">
-          <h2>Select Tip %</h2>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="text" name="" id="" placeholder="Custom">
-        </div>
-        <div class="fill-in">
-          <h2>Number of People</h2>
-          <i><img src="images/icon-person.svg" alt="icon-person"></i>
-          <input type="text" placeholder="0">
+        <label for="People">Number of People</label>
+        <div class="input-wrapper">
+          <img src="images/icon-person.svg" alt="icon-person">
+          <input type="number" placeholder="0" name="number" id="people">
         </div>
       </section>
-    </div>
-
-    <div class="second">
-      <section>
-        <div class="full-content">
-          <div class="content-wrapper">
-            <div class="half-width1">
-              <h3>Tip Amount</h3>
-              <p>/ person</p>
-            </div>
-            <div class="half-width2">
-              <h3>$0.00</h3>
-            </div>
-          </div>
-          <div class="content-wrapper">
-            <div class="half-width1">
-              <h3>Total</h3>
-              <p>/ person</p>
-            </div>
-            <div class="half-width2">
-              <h3>$0.00</h3>
-            </div>
-          </div>
-
-        </div>
-        <div class="btn">
-          <button>Reset</button>
-        </div>
-      </section>
-    </div>
+    </form>
   </main>
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    built with the Holy Spirit by <a href="https://kerdaino.github.io/portfolio/" target="_blank">Tobi Adekunle(Kdev)</a>.
+    Coded by <a href="#">Your Name Here</a>.
   </div>
-  <script src="js/main.js" defer></script>
 </body>
 
 </html>
