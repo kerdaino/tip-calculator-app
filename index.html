@@ -7,37 +7,31 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
 
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
   <header>
+
     <img src="images/logo.svg" alt="logo">
+
   </header>
   <main>
+
     <form id="Tip">
-      <section class="bill-content">
+
+      <fieldset class="bill-content">
         <label>Bill</label>
         <div class="input-wrapper">
           <img src="images/icon-dollar.svg" alt="icon-dollar">
-          <input type="number" placeholder="0" name="number" id="bill">
+          <input type="text" placeholder="0" name="number" id="bill">
         </div>
-      </section>
-      <section class="tip-content">
+      </fieldset>
+
+      <fieldset class="tip-content">
         <label for="Tip">Select Tip %</label>
         <div class="tip buttons">
           <button type="button">5%</button>
@@ -46,26 +40,44 @@
           <button type="button">15%</button>
           <button type="button">25%</button>
           <button type="button">50%</button>
-          <input type="number" placeholder="Custom" name="number" id="tipinput">
+          <input type="text" placeholder="Custom" name="number" id="tipinput">
         </div>
-      </section>
-      <section>
+      </fieldset>
+
+      <fieldset class="numberOf">
         <label for="People">Number of People</label>
         <div class="input-wrapper">
           <img src="images/icon-person.svg" alt="icon-person">
-          <input type="number" placeholder="0" name="number" id="people">
+          <input type="text" placeholder="0" name="number" id="people">
         </div>
-      </section>
+      </fieldset>
+
     </form>
+
+  <div class="outputContainer">
+    <section>
+      <div class="tipAmountOutput">
+        <h4>Tip Amount</h4>
+        <p>/ person</p>
+        <output>
+          <p>0.00</p>
+        </output>
+      </div>
+    </section>
+
+    <section>
+      <div class="tipAmountOutput">
+        <h4>Total</h4>
+        <p>/ person</p>
+        <output>
+          <p>0.00</p>
+        </output>
+      </div>
+    </section>
+
+    <button type="reset">Reset</button>
+  </div>
   </main>
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

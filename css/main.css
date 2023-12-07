@@ -1,0 +1,81 @@
+/* Google Fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/* Globalstyle reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: 'Space mono', monospace;
+    background: hsl(185, 41%, 84%);
+}
+
+header{
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+main{
+    display: flex;
+    background: hsl(0,0%,100%);
+    padding: 12px;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+fieldset{
+    border: none;
+    margin: 20px;
+}
+
+label{
+    color: hsl(190,8%,45%);
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-wrapper img{
+    position: absolute;
+    padding: 10px;
+}
+
+.input-wrapper input{
+    text-align: end;
+    padding-right: 5px;
+}
+
+.input-wrapper input::placeholder{
+    color: hsl(176, 17%, 66%);
+}
+
+input{
+    background: hsl(202,50%,97%);
+    border: none;
+    padding: 2px; 
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+
+#tip,.outputContainer{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
